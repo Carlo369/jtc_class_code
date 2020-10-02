@@ -74,6 +74,11 @@ print(fav_restaurants)
 # print()
 
 # print("Question 4")
+old_hours = fav_restaurants["Mi Tierrita"][2]
+fav_restaurants["Mi Tierrita"][2] = "12pm - 9 PM"
+print(old_hours)
+print(fav_restaurants["Mi Tierrita"][2])
+print(fav_restaurants)
 
 # print("Imagine that another one of your most favourite restaurants modified its opening and closing hours during Covid. Update just the hours field (3rd value of the list) for 1 restaurant in the dictionary fav_restaurants.")
 
