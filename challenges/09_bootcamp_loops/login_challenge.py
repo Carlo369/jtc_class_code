@@ -19,7 +19,15 @@ while(email != user['email']):
 # Seeing 'Password: ' in command line means we have exited the while loop
 password = input('Password: ')
 
+
+while(password != user['password']):
+    # This code runs as long as the emails do not match
+    print('This password is incorrect. Please try again.')
+    # Ask to input email again and update value of email in line 10
+    password = input('Password: ')
+
 # TODO: Write a while loop that checks whether the password is incorrect.
+print("Logging in...")
 
 # TODO: Print 'Logging In...'
 

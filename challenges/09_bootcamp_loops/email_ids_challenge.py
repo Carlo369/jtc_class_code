@@ -38,8 +38,8 @@ for i in range(len(names)):
 	names[i] = names[i].split()
 	names[i] = '.'.join(names[i])
 	names[i] = names[i] + '@ripplemedia.com'
-	
-print(names)
+emails.append(names)
+print(emails)
 	
 # We want to convert all their names into the same format from Question 1
 # 2.1 TODO: Use a "for" loop to go over each name in the names list
