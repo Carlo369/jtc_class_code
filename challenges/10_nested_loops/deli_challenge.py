@@ -34,4 +34,13 @@ print('Question 3')
 # TODO: Let's create an input to take a customer order for a sandwich, for example: 'Ham & Swiss'
 # TODO: Loop over the sandwiches list.
 # TODO: If it exists, print 'Great choice! 1 Ham & Swiss coming right up!'
+
 order = input('Can I take your order? ')
+is_on_menu = False
+for pick in sandwiches:
+	if order == pick:
+		print(f'Great choice! 1 {order} coming right up!')
+		is_on_menu = True
+if not is_on_menu:
+	print("Sorry, we don't have that")
+
