@@ -67,12 +67,11 @@ Test your function by making several withdrawals to your account
 withdraw(my_account, 50.00)
 print(my_account)
 
-withdraw(my_account, 100)
-#print(my_account)
+
 print('PART 3\n')
 # TODO define the withdraw() function here and make sure it works
 
-
+withdraw(my_account, 100)
 '''
 BONUS QUESTION 4: Password-protect withdrawal and deposits
 Make new deposit_secure() and withdraw_secure() functions that prompt the user for their username/password FIRST
@@ -81,8 +80,16 @@ Otherwise, tell the user the info is wrong
 
 Test out your new functions to make sure they accept correct info, and let the user know if the password/username is incorrect
 '''
-
-
+deposit_secure(my_account, 30)
+print(my_account)
 # TODO: define password-protected withdraw_secure() and deposit_secure() functions
 # HINT: there are tons of ways to do this correctly
 # HINT: you can write any additional functions if you like
+
+
+
+
+
+
+
+

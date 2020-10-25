@@ -2,10 +2,9 @@
 # In this challenge, you'll have to both work on this script, and the accompanying script playlist_functions.py
 # All of your functions should be in the other script (playlist_functions.py)
 # But, you'll run your functions here
-
+import numpy as np 
 # 1 Import all the functions in playlist_functions.py
 from playlist_functions import *
-
 # This code initializes your playlist as an empty list. no songs in it yet!
 my_playlist = []
 
@@ -48,9 +47,15 @@ print(get_playlist_length(my_playlist))
 # You don't have to write any functions for this question
 print('Question 8')
 monthly_plays = [127030, 274920, 232453, 98278, 500301, 235462]
-
+print(np.mean(monthly_plays))
 
 # BONUS In playlist_functions.py, define a new function called play_track()
 # See playlist_functions.py for details on how to define this function
 # Then play a few tracks, and run display_playlist() again to make sure it works
 print('BONUS')
+print(my_playlist)
+play_track(my_playlist, 1)
+play_track(my_playlist, 2)
+play_track(my_playlist, 3)
+
+display_playlist(my_playlist)

@@ -17,8 +17,6 @@ def add_song(playlist, song):
 	song['plays'] = 0
 	playlist.append(song)
 
-
-
 '''
 TODO (Question 6): define a function called get_playlist_length()
 This function should have one parameter called 'playlist'
@@ -26,9 +24,6 @@ The function should return an integer value indicating how many songs there are
 '''
 def get_playlist_length(playlist):
 	return len(playlist)
-
-
-
 
 '''
 TODO (BONUS): define a function called play_track()
@@ -46,5 +41,9 @@ Assuming that the third track in your playlist 'Controversy' by 'Prince'
 This function should ALSO increase the 'plays' value for that song's dictionary by 1
 So, if 'Controversy' has 0 plays so far, it should now be increased to 1
 '''
+def play_track(playlist, track):
+	track = track -1
+	playlist[track]['plays'] +=1
+	print(f'Now playing track {track+1}, {playlist[track]["title"]} by {playlist[track]["artist"]}')
 
 
